@@ -1,0 +1,54 @@
+{
+  "name": "xueqiu-cli",
+  "version": "0.1.0",
+  "description": "雪球（xueqiu.com）组合调仓命令行工具：复用浏览器 Cookie，支持整体调仓、单笔买卖、批量配置文件调仓。",
+  "keywords": [
+    "xueqiu",
+    "雪球",
+    "cli",
+    "portfolio",
+    "rebalance",
+    "调仓",
+    "股票"
+  ],
+  "license": "MIT",
+  "author": "fanxinqi",
+  "homepage": "https://github.com/fanxinqi/xueqiu-cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fanxinqi/xueqiu-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fanxinqi/xueqiu-cli/issues"
+  },
+  "main": "src/index.js",
+  "bin": {
+    "xueqiu": "bin/xueqiu.js",
+    "xq": "bin/xueqiu.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "start": "node bin/xueqiu.js",
+    "test": "node test/smoke.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.5",
+    "commander": "^12.1.0",
+    "js-yaml": "^4.1.0",
+    "prompts": "^2.4.2"
+  },
+  "optionalDependencies": {
+    "puppeteer-core": "^23.11.1"
+  }
+}

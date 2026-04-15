@@ -1,0 +1,16 @@
+# 批量调仓：一次提交多个组合
+rebalances:
+  - cube_symbol: ZH111111
+    mode: replace
+    comment: "A 股组合 - 防御配置"
+    targets:
+      - { symbol: SH601398, weight: 25 }   # 工商银行
+      - { symbol: SH601318, weight: 20 }   # 中国平安
+      - { symbol: SH600900, weight: 15 }   # 长江电力
+
+  - cube_symbol: ZH222222
+    mode: patch
+    comment: "港美股组合 - 局部加仓"
+    targets:
+      - { symbol: HK00700, weight: 25 }
+      - { symbol: NVDA,    weight: 15 }

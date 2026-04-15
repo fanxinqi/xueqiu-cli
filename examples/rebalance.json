@@ -1,0 +1,11 @@
+{
+  "cube_symbol": "ZH123456",
+  "mode": "replace",
+  "comment": "春季调仓：增配白酒，降低银行权重",
+  "targets": [
+    { "symbol": "SH600519", "weight": 30 },
+    { "symbol": "SZ000858", "weight": 20 },
+    { "symbol": "SH600036", "weight": 15 },
+    { "symbol": "HK00700",  "weight": 10 }
+  ]
+}

@@ -1,0 +1,16 @@
+cube_symbol: ZH123456
+# mode: replace (默认) 用 targets 覆盖整个持仓；patch 只改列出的股票
+mode: replace
+comment: "季度再平衡"
+targets:
+  - symbol: SH600519   # 贵州茅台
+    weight: 30
+  - symbol: SZ000858   # 五粮液
+    weight: 20
+  - symbol: SH600036   # 招商银行
+    weight: 15
+  - symbol: HK00700    # 腾讯控股
+    weight: 10
+  - symbol: AAPL       # 美股 Apple
+    weight: 10
+  # 剩余 15% 作为现金
