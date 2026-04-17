@@ -1,6 +1,6 @@
 {
   "name": "xueqiu-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "雪球（xueqiu.com）组合调仓命令行工具：复用浏览器 Cookie，支持整体调仓、单笔买卖、批量配置文件调仓。",
   "keywords": [
     "xueqiu",
@@ -30,6 +30,7 @@
     "bin",
     "src",
     "examples",
+    ".claude/skills",
     "README.md",
     "LICENSE"
   ],

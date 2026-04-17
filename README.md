@@ -229,6 +229,16 @@ XUEQIU_DEBUG=1 xueqiu rebalance ZH123456 -s SH600519:30 -n
 | `xueqiu apply <file>` | 批量调仓（JSON/YAML）|
 | `xueqiu config show \| set-cube \| use` | 配置管理 |
 
+## 给 AI 工具用
+
+本 repo 内置一份 AI agent 使用指南：[`.claude/skills/xueqiu-cli/SKILL.md`](./.claude/skills/xueqiu-cli/SKILL.md)。
+
+- **Claude Code**：打开本目录自动加载，无需手动操作。
+- **Cursor / Aider / Cline / 其他 agent**：在你的 system prompt / rules 里加一句「使用 xueqiu CLI 前先读 `.claude/skills/xueqiu-cli/SKILL.md`」即可。
+- **自写脚本（LangChain / OpenAI function calling 等）**：把该文件内容塞进 system prompt，或作为工具说明传给模型。
+
+里面写了命令速查、`--dry-run` 安全流程、股票代码归一化、批量 YAML 格式和红线清单。
+
 ## 免责声明
 
 - 本工具是**非官方**的第三方 CLI，雪球 API 可能随时变动导致不可用。
